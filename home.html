@@ -399,10 +399,10 @@ function drawGrahpics(){
 
 
       $(".candidatename").on("click",function(){
-        var nameOfCandidate = $(this).text();
+        var candidateName = $(this).text();
           candidates.style("opacity",0.1);
           candidates.filter(function(path) {
-            return path.name === nameOfCandidate;
+            return path.name === candidateName;
           }).style("opacity",1);
         });
      
